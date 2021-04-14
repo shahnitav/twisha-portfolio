@@ -1,5 +1,6 @@
 :root {
   --hyperlink: #FF8D28;
+  --hyperlink-focus: #F5A156;
 }
 /* Base */
 body {
@@ -81,11 +82,18 @@ a {
   border-color: #777;
   color: #fff !important; }
   .form-control:active, .form-control:focus {
-    border-color: #20c997;
+    border-color: var(--hyperlink);
     background: transparent; }
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
+
+.contact a {
+  color: var(--hyperlink);
+}
+.contact a:hover {
+  color: var(--hyperlink-focus);
+}
 
 .site-section {
   padding: 2.5em 0; }
@@ -315,7 +323,7 @@ a {
           transition: 0s all;
           color: #343a40; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
-          color: #20c997 !important; }
+          color: var(--hyperlink) !important; }
         .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
           list-style: none;
           padding: 0;
@@ -353,11 +361,20 @@ a {
 .site-menu[data-class="social"] a {
   color: rgba(0, 0, 0, 0.5); }
 
-.icon-facebook:hover, .icon-twitter:hover {
+.icon-facebook:hover, .icon-linkedin-square:hover, .icon-behance:hover {
   color: #3498DB;
 }
-.icon-instagram:hover, .icon-youtube-play:hover {
+.icon-instagram:hover {
   color: #E74C3C;
+}
+.icon-issuu svg {
+  display: inline;
+  vertical-align: inherit;
+  margin-top: 0.2rem;
+}
+
+.icon-issuu svg path:hover{
+  fill: #F36D5D;
 }
 
 .site-mobile-menu {
@@ -428,13 +445,23 @@ a {
       display: block;
       position: relative;
       color: #212529; }
-      .site-mobile-menu .site-nav-wrap a:hover {
-        color: #20c997; }
+    .site-mobile-menu .site-nav-wrap svg{
+        width: 18px;
+        height: 18px;
+        margin-top: 0.3rem;
+      }
+    .site-mobile-menu .site-nav-wrap svg path{
+      fill: #212529;
+    }
+    .site-mobile-menu .site-nav-wrap svg path:hover{
+      fill: #F36D5D;
+    }
+
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li.active > a {
-        color: #20c997; }
+        color: var(--hyperlink); }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -823,7 +850,7 @@ a {
     font-weight: bold;
     color: #cccccc; }
     .site-block-tab .nav-item > a:hover, .site-block-tab .nav-item > a.active {
-      border-bottom: 2px solid #20c997;
+      border-bottom: 2px solid var(--hyperlink);
       color: #000; }
 
 .block-13, .slide-one-item {
@@ -947,7 +974,7 @@ a {
         width: 80px;
         height: 4px;
         margin-top: -4px;
-        background: #20c997;
+        background: var(--hyperlink);
         top: 0; }
       .block-12 .text .text-inner .heading {
         font-size: 20px;
@@ -970,7 +997,7 @@ a {
     display: block;
     border-radius: 50%;
     opacity: 1;
-    color: #20c997 !important; }
+    color: var(--hyperlink) !important; }
     .block-16 figure .play-button:hover {
       opacity: 1; }
     .block-16 figure .play-button > span {
@@ -1008,7 +1035,7 @@ a {
   color: #999999; }
 
 .block-25 ul li a .meta {
-  color: #20c997; }
+  color: var(--hyperlink); }
 
 .block-25 ul li a:hover img {
   opacity: .5; }
@@ -1037,7 +1064,7 @@ a {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: #20c997;
+    background: var(--hyperlink);
     border-radius: 50%;
     color: #fff; }
     .player .team-number > span {
@@ -1072,7 +1099,7 @@ a {
     border-radius: 50%;
     border: 1px solid #ccc; }
   .site-block-27 ul li.active a, .site-block-27 ul li.active span {
-    background: #20c997;
+    background: var(--hyperlink);
     color: #fff;
     border: 1px solid transparent; }
 
@@ -1135,6 +1162,15 @@ a {
     .swiper-container .swiper-slide .image-wrap:hover:before {
       background: rgba(0, 0, 0, 0.4);
       content: ""; }
+
+.btn-primary {
+  background-color: var(--hyperlink);
+  border-color: var(--hyperlink);
+}
+.btn-primary:hover {
+  background-color: var(--hyperlink-focus);
+  border-color: var(--hyperlink-focus);
+}
 
 .btn-outline-white {
   border-color: #fff;
@@ -1222,7 +1258,7 @@ a {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #20c997; }
+  background: var(--hyperlink); }
 
 #lightgallery .item {
   margin-bottom: 30px; }
@@ -1242,7 +1278,7 @@ img {
   /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
   filter: gray;
   /* IE5+ */
-  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(0);
   /* Webkit Nightlies & Chrome Canary */
   -webkit-transition: all .1s ease-in-out; }
   img:hover {
