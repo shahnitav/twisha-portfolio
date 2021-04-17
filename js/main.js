@@ -158,45 +158,20 @@ jQuery(document).ready(function($) {
 
 
 	var siteCarousel = function () {
-		if ( $('.nonloop-block-13').length > 0 ) {
-			$('.nonloop-block-13').owlCarousel({
-		    center: false,
-		    items: 1,
-		    loop: false,
-				stagePadding: 0,
-		    margin: 20,
-		    nav: true,
-				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
-		    responsive:{
-	        600:{
-	        	margin: 20,
-	          items: 2
-	        },
-	        1000:{
-	        	margin: 20,
-	        	stagePadding: 0,
-	          items: 2
-	        },
-	        1200:{
-	        	margin: 20,
-	        	stagePadding: 0,
-	          items: 3
-	        }
-		    }
-			});
-		}
 
-		$('.slide-one-item').owlCarousel({
-	    center: false,
-	    items: 1,
-	    loop: true,
+		$('.carousel-about').owlCarousel({
+			center: true,
+			loop: true,
+			items:3,
+			margin: 30,
 			stagePadding: 0,
-	    margin: 0,
-	    autoplay: true,
-	    pauseOnHover: false,
-	    nav: true,
-	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
-	  });
+			nav: false,
+			autoplay: true,
+			slideTransition: 'linear',
+			autoplayTimeout: 5000,
+			autoplaySpeed: 1000,
+			autoplayHoverPause: false
+		});
 	};
 	siteCarousel();
 
@@ -290,5 +265,21 @@ jQuery(document).ready(function($) {
 	  })
 	}
 	swiperSetting();
+});
 
+var myform = $("form#contact-form");
+myform.submit(function(event){
+	event.preventDefault();
+
+  // Change to your service ID, or keep using the default service
+  var service_id = "twishaaa20@gmail.com";
+  var template_id = "template_jzhf4ck";
+
+  emailjs.sendForm(service_id,template_id,myform[0])
+  	.then(function(){ 
+    	alert("Sent!");
+    }, function(err) {
+       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+    });
+  return false;
 });

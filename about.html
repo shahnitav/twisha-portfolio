@@ -11,16 +11,14 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
   <link rel="stylesheet" href="css/lightgallery.min.css">    
 
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
   <link rel="stylesheet" href="css/aos.css">
 
@@ -57,7 +55,7 @@
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li><a href="index.html">Home</a></li>
                 <li class="has-children">
-                  <a href="single.html">Gallery</a>
+                  <a href="projects.html">Projects</a>
                   <ul class="dropdown">
                     <li><a href="#">Residential Design</a></li>
                     <li><a href="#">Institution Design</a></li>
@@ -125,11 +123,11 @@
 
         </div>
         
-        <div class="row mb-5">
+        <div class="row mb-5 justify-content-center">
           <div class="col-md-7">
-            <img src="images/img_2.jpg" alt="Images" class="img-fluid">
+            <img src="images/profile.jpeg" alt="Images" class="center-block d-block mx-auto img-fluid w-50 rounded-circle">
           </div>
-          <div class="col-md-4 ml-auto">
+          <div class="col-md-4">
             <h3 class="text-white">My Mission</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus vel tenetur explicabo necessitatibus, ad soluta consectetur illo qui voluptatem. Quis soluta maiores eum. Iste modi voluptatum in repudiandae fugiat suscipit dolorum harum, porro voluptate quis? Alias repudiandae dicta doloremque voluptates soluta repellendus, unde laborum quo nam, ullam facere voluptatem similique.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor architecto excepturi aliquid minus nostrum dicta labore iusto obcaecati fugit cupiditate.</p>
@@ -138,35 +136,34 @@
 
 
         <div class="row site-section">
-          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5">
-            <img src="images/person_1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">Jean Smith</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque tenetur porro?</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5">
-            <img src="images/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">Claire Smith</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque tenetur porro?</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5">
-            <img src="images/person_4.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
-            <h2 class="text-black font-weight-light mb-4">John Smith</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ab quas facilis obcaecati non ea, est odit repellat distinctio incidunt, quia aliquam eveniet quod deleniti impedit sapiente atque tenetur porro?</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
-            </p>
+          <div class="col-md-12">
+            <div class="d-block carousel-about owl-carousel">
+              <div class="item">
+                <div class="py-4">
+                  <img src="./images/person_1.jpg" alt="">
+                </div>
+              </div>
+              <div class="item">
+                <div class="py-4">
+                  <img src="./images/person_2.jpg" alt="">
+                </div>
+              </div>
+              <div class="item">
+                <div class="py-4">
+                  <img src="./images/person_3.jpg" alt="">
+                </div>
+              </div>
+              <div class="item">
+                <div class="py-4">
+                 <img src="./images/person_4.jpg" alt="">
+                </div>
+              </div>
+              <div class="item">
+                <div class="py-4">
+                  <img src="./images/person_5.jpg" alt="">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -179,11 +176,6 @@
         </p>
       </div>
     </div>
-
-    
-
-    
-    
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -191,14 +183,12 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/jquery.countdown.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/swiper.min.js"></script>
   <script src="js/aos.js"></script>
-
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/lightgallery-all.min.js"></script>
   <script src="js/jquery.mousewheel.min.js"></script>
