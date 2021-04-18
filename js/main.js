@@ -201,15 +201,6 @@ jQuery(document).ready(function($) {
 	};
 	siteCountDown();
 
-	var siteDatePicker = function() {
-
-		if ( $('.datepicker').length > 0 ) {
-			$('.datepicker').datepicker();
-		}
-
-	};
-	siteDatePicker();
-
 	var swiperSetting = function() {
 		var mySwiper = new Swiper ('.swiper-container', {
 	    // Optional parameters
