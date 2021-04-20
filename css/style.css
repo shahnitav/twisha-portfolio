@@ -136,12 +136,10 @@ a {
 
   .site-section-subheading {
     color: var(--hyperlink);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Vollkorn', serif;
+    font-weight: bold;
     position: relative;
-    font-size: 2.5rem; 
-    background: #0d1137;
-    padding: 0.5rem;
-    border-radius: 3px;}
+    font-size: 2.5rem;}
     @media (max-width: 768px) {
       .site-section-subheading {
         font-size: 1.5rem; }}
