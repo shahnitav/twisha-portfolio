@@ -136,7 +136,7 @@ a {
 
   .site-section-subheading {
     color: var(--hyperlink);
-    font-family: 'Vollkorn', serif;
+    font-family: 'Dosis', sans-serif;
     font-weight: bold;
     position: relative;
     font-size: 2.5rem;}
@@ -151,6 +151,17 @@ a {
       width: 100px;
       height: 1px;
       background: #000; }
+  .site-section-description {
+    color: #777;
+    font-style: italic;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+  } @media (max-width: 768px) {
+    .site-section-description {
+      font-size: 1rem;
+    }
+  }
 
 .logo{
   color: black;
@@ -187,7 +198,9 @@ a {
                 background: white;
                 } .darkmode--activated .text-black {
                   color: white !important;
-                }
+                  } .darkmode--activated .site-section-description {
+                    color: white;
+                    }
 
 
 
