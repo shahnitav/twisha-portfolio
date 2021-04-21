@@ -1,10 +1,10 @@
 :root {
-  --hyperlink: #e52165;
+--hyperlink: #FF8D28;
   --hyperlink-focus: #F5A156; 
-/*  --hyperlink: #FF8D28;
-  --hyperlink-focus: #F5A156; */
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+button .darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
 /* Base */
 body {
   line-height: 1.7;
@@ -151,6 +151,45 @@ a {
       width: 100px;
       height: 1px;
       background: #000; }
+
+.logo{
+  color: black;
+  } .logo:hover {
+    color: black;
+  }
+
+.darkmode--activated {
+  --hyperlink: #64FFDA;
+  --hyperlink-focus: #A7FFEB;
+  } .darkmode--activated .logo {
+    color: white;
+    } .darkmode--activated .icon-issuu svg path{
+      fill: white;
+    } .darkmode--activated .site-menu[data-class="social"] a {
+        color: rgba(255, 255, 255, 1); 
+      } .darkmode--activated .site-navbar .site-navigation .site-menu .active > a {
+        color: var(--hyperlink);
+        } .darkmode--activated .site-navbar .site-navigation .site-menu > li > a {
+        color: rgba(255, 255, 255, 1);
+        } .darkmode--activated .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
+          background: #25262a;
+          color: #f4f5f9; }
+          .darkmode--activated .site-navbar .site-navigation .site-menu .has-children .dropdown {
+            background: black;
+            border-left: 1px solid #25262a;
+            border-right: 1px solid #25262a;
+            border-bottom: 1px solid #25262a;
+          } .darkmode--activated .site-navbar .site-navigation .site-menu .has-children .dropdown a {
+             color: white;
+            } .darkmode--activated .site-section-heading {
+              color: white;
+              } .darkmode--activated .site-section-heading.text-center:after {
+                background: white;
+                } .darkmode--activated .text-black {
+                  color: white !important;
+                }
+
+
 
 .border-top {
   border-top: 1px solid #edf0f5 !important; }
@@ -1193,8 +1232,8 @@ a {
   border-color: var(--hyperlink-focus);
 }
 .btn-primary:active {
-  background-color: var(--hyperlink);
-  border-color: var(--hyperlink);
+  background-color: var(--hyperlink) !important;
+  border-color: var(--hyperlink) !important;
 }
 
 .btn-outline-white {
