@@ -161,6 +161,8 @@ a {
     .site-section-description {
       font-size: 1rem;
     }
+  } .site-section-highlight {
+    color: var(--hyperlink);
   }
 
 .logo{
